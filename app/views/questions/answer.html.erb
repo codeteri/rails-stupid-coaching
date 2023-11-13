@@ -1,0 +1,13 @@
+<div class="center-block">
+<h1>Stupid Coaching</h1>
+<% if @question[-1] == "?" %>
+  <%= @answers[0] %>
+<% elsif @question == "I am going to work" %>
+  <%= @answers[1] %>
+<% else %>
+  <%= @answers[2] %>
+<% end %>
+<br>
+<%= link_to "Ask another question", ask_path %>
+</div>
+
